@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+:root {
+  --background-main: #e5e5e5;
+  --background-header: #292929;
+  --background-banner-location: #14100c;
+  --font-primary-color: #f8af35;
+  --font-secondary-color: #ffd413;
+  --white: #ffffff;
+  --black: #000000;
+}
+
+html {
+  font-family: "Bebas Neue", sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  background-image: url("../assets/hamburguer-original-1.png");
+  text-transform: uppercase;
+  border-radius: 60px;
+  width: 900px;
+  height: 450px;
+}
+
+.card__title {
+  color: var(--font-primary-color);
+  font-weight: bold;
+}
+
+.card__ingredients-menu {
+  margin-left: auto;
+}
+
+.card__ingredients-item {
+  color: var(--white);
+}
