@@ -1,15 +1,81 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Spray+Paint&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sigmar&display=swap");
 
 :root {
   --background-main: #e5e5e5;
   --background-header: #292929;
   --background-banner-location: #14100c;
-  --font-primary-color: #f8af35;
-  --font-secondary-color: #ffd413;
+  --laranja-destaque: #f8af35;
+  --amarelo-separador-banner: #ffd413;
   --white: #ffffff;
   --black: #000000;
+  --font-btn-titles: "Rubik Spray Paint", sans-serif;
+  --font--main: "Sigmar", sans-serif;
 }
 
 html {
-  font-family: "Bebas Neue", sans-serif;
+  font-size: 16px;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--background-header);
+  color: var(--white);
+  padding: 10px 20px;
+  font-family: var(--font--main);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.logo__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.logo__imagem {
+  width: 80px;
+  height: 80px;
+}
+
+.logo__descricao {
+  font-size: 2rem;
+}
+
+.logo__palavra-destaque {
+  color: var(--laranja-destaque);
+}
+
+.nav__menu-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6rem;
+  margin-right: 4rem;
+  font-size: 1.4rem;
+}
+
+.banner__link-destaque {
+  background-color: var(--laranja-destaque);
+  color: var(--font-primary-color);
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+  border-radius: 10px;
+  border: none;
+  margin-left: 20px;
+  padding: 10px;
+}
+
+.banner__link-destaque:hover {
+  padding: 12px;
 }
