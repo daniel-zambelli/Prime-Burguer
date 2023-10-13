@@ -10,6 +10,7 @@
   --amarelo-separador-banner: #ffd413;
   --white: #ffffff;
   --black: #000000;
+  --font-texto: "Bebas Neue", sans serif;
   --font-btn-titles: "Rubik Spray Paint", sans-serif;
   --font--main: "Sigmar", sans-serif;
 }
@@ -24,6 +25,8 @@ body {
 }
 
 header {
+  height: 100px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -64,18 +67,68 @@ header {
   font-size: 1.4rem;
 }
 
-.banner__link-destaque {
-  background-color: var(--laranja-destaque);
-  color: var(--font-primary-color);
-  font-family: inherit;
-  font-size: inherit;
-  cursor: pointer;
-  border-radius: 10px;
-  border: none;
-  margin-left: 20px;
+.nav__menu-item .nav__menu-link {
   padding: 10px;
 }
 
-.banner__link-destaque:hover {
-  padding: 12px;
+.button__link-destaque {
+  background-color: var(--laranja-destaque);
+  color: var(--white);
+  font-family: var(--font-btn-titles);
+  font-size: inherit;
+  cursor: pointer;
+  letter-spacing: 1px;
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+  transition: all 0.4s;
+}
+
+.button__link-destaque:hover {
+  transform: scale(1.08);
+}
+
+.banner__container {
+  background-color: var(--background-banner-location);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.banner__container-textos {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  padding-left: 10rem;
+}
+
+.banner__titulo {
+  font-family: var(--font--main);
+  color: var(--white);
+  font-size: 3rem;
+  letter-spacing: 3px;
+  line-height: 3.5rem;
+  text-transform: uppercase;
+}
+
+.banner__linha-divisoria {
+  width: 50%;
+  height: 5px;
+  background-color: var(--amarelo-separador-banner);
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+.banner__texto-descricao {
+  font-family: var(--font-texto);
+  font-size: 2rem;
+  color: var(--white);
+  text-transform: uppercase;
+  line-height: 2rem;
+  margin-bottom: 10px;
+}
+
+.banner__imagem {
+  width: 50%;
+  margin-top: 100px;
 }
