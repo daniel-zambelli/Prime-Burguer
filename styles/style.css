@@ -74,14 +74,15 @@ header {
 .button__link-destaque {
   background-color: var(--laranja-destaque);
   color: var(--white);
-  font-family: var(--font-btn-titles);
+  font-family: var(--font--main);
   font-size: inherit;
   cursor: pointer;
   letter-spacing: 1px;
   border-radius: 10px;
   border: none;
+  box-shadow: 2px 2px 7px #ffd41362;
   padding: 10px;
-  transition: all 0.4s;
+  transition: all 0.5s;
 }
 
 .button__link-destaque:hover {
@@ -131,4 +132,135 @@ header {
 .banner__imagem {
   width: 50%;
   margin-top: 100px;
+}
+
+.cardapio__container-titulo {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardapio__titulo {
+  font-size: 2rem;
+  line-height: 1rem;
+  text-transform: uppercase;
+  font-family: var(--font--main);
+  padding-top: 1.5rem;
+  padding-bottom: 0.5rem;
+  text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.282);
+}
+
+.cardapio__texto-descricao {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-family: var(--font--main);
+  text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.282);
+}
+
+.cardapio__card-container {
+  display: grid;
+  grid-gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.card-hamburguer {
+  height: 450px;
+  width: 100%;
+  border-radius: 20px;
+  text-transform: uppercase;
+  padding: 2rem 3rem;
+}
+
+.card1 {
+  background-image: url(../assets/hamburguer-original-1.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card2 {
+  background-image: url(../assets/hamburguer-cheese-classic-2.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card3 {
+  background-image: url(../assets/hamburguer-bbq-bacon-3.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card4 {
+  background-image: url(../assets/hamburguer-bacon-beef-4.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card_hamburguer-titulo {
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: var(--font-btn-titles);
+  color: var(--laranja-destaque);
+  text-align: right;
+  padding-bottom: 2rem;
+}
+
+.card__hamburguer-descricao {
+  font-size: 1.2rem;
+  color: var(--white);
+  font-family: var(--font--main);
+  text-align: right;
+  font-weight: 300;
+  line-height: 2rem;
+}
+
+.card__hamburguer-preco {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--white);
+  background-color: var(--laranja-destaque);
+  width: 140px;
+  text-align: center;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-top: 3rem;
+}
+
+.bebidas__tabela-container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 10rem;
+  border: solid 2px black;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bebidas__lista-titulo {
+  font-size: 2.2rem;
+  font-family: var(--font--main);
+  color: var(--laranja-destaque);
+}
+
+.bebidas__lista-nomes {
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 10px;
+  font-family: var(--font--main);
+  font-weight: 400;
+}
+
+.bebidas__linha-divisoria {
+  height: 10px;
+  background-color: var(--background-header);
 }
